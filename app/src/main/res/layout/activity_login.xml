@@ -14,11 +14,11 @@
         <!-- Logo -->
         <ImageView
             android:id="@+id/logoImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/crave_logo"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
             android:contentDescription="Logo"
-            android:layout_marginTop="40dp" />
+            android:src="@drawable/logo" />
 
         <!-- Welcome Text -->
         <TextView
