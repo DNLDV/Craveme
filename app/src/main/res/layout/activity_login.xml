@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/crave_logo"
+            android:contentDescription="Logo"
+            android:layout_marginTop="40dp" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textColor="#000000"
+            android:layout_gravity="start"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_dark_background"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="#006FFD"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Login"
+            android:backgroundTint="#006FFD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Not a member? Register now"
+            android:textColor="#006FFD"
+            android:textSize="15dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Social Media Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/googleButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_google"
+                android:contentDescription="Google"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/appleButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_apple"
+                android:contentDescription="Apple"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/facebookButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="Facebook"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
